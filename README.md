@@ -249,7 +249,8 @@ La aplicación obtiene una puntuación de **100 en todas las categorías** del a
 | Best Practices   | 100        |
 | SEO              | 100        |
 
-![Lighthouse 100/100 en todas las categorías](./100.png)
+![Lighthouse 100/100 en todas las categorías]
+<img width="1915" height="908" alt="100" src="https://github.com/user-attachments/assets/49b1e0be-b224-4fea-89f6-d0a62c36e354" />
 
 ---
 
