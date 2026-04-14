@@ -1,4 +1,4 @@
-# Todo CRUD — Prueba técnica
+# Todo CRUD — Informa DB Prueba técnica
 
 Aplicación CRUD de tareas construida con **Next.js 16 App Router**, **TypeScript** y **React 19**. Incluye API REST, cliente web, internacionalización (ES/EN/FR/CA), tests unitarios, documentación Swagger y logging estructurado.
 
