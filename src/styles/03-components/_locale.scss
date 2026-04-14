@@ -1,4 +1,4 @@
-@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/00-settings/variables" as var;
 @use "@/styles/01-tools/mixins" as mx;
 
 .locale {
@@ -38,7 +38,7 @@
     right: 0;
     z-index: 1;
     width: 8.5rem;
-    font-size: variables.$text-sm;
+    font-size: var.$text-sm;
     border: 1px solid var(--border-color);
     background-color: var(--background-color);
     @include mx.px(0.5rem);

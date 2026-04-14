@@ -5,6 +5,7 @@ import { Suspense, use } from "react";
 import TodosTable from "@/views/components/TodosTable";
 import TodosFilters from "@/views/components/TodosFilters";
 import TitleComponent from "@/components/ui/TitleComponent";
+import LoadingSpinner from "@/components/ui/LoadingSpinner";
 
 import { fetchAllTodos } from "@/actions/todos/todos";
 
@@ -17,7 +18,7 @@ export default function TodosViewPage(props: TodosViewPageProps) {
         <>
             <TitleComponent namespace="Todos" />
             <TodosFilters />
-            <Suspense fallback={<p>Cargando...</p>}>
+            <Suspense fallback={<LoadingSpinner />}>
                 <TodosViewContent {...props} />
             </Suspense>
         </>

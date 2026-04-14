@@ -5,7 +5,8 @@
     "status": "Estado",
     "search": "Buscar tareas",
     "rowsPerPage": "Filas por página",
-    "deleteTodoConfirmation": "¿Estás seguro de que quieres eliminar esta tarea?"
+    "deleteTodoConfirmation": "¿Estás seguro de que quieres eliminar esta tarea?",
+    "loading": "Cargando"
   },
   "Options": {
     "all": "Todos",

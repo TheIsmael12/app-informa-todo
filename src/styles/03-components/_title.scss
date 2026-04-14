@@ -1,4 +1,4 @@
-@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/00-settings/variables" as var;
 @use "@/styles/01-tools/mixins" as mx;
 
 .title {
@@ -19,17 +19,17 @@
     }
 
     &__heading {
-        font-family: variables.$font-title;
-        font-size: variables.$text-3xl;
-        font-weight: variables.$font-bold;
+        font-family: var.$font-title;
+        font-size: var.$text-3xl;
+        font-weight: var.$font-bold;
         color: var(--color);
         line-height: 1.15;
         letter-spacing: -0.02em;
     }
 
     &__description {
-        font-size: variables.$text-sm;
-        font-weight: variables.$font-normal;
+        font-size: var.$text-sm;
+        font-weight: var.$font-normal;
         color: var(--border-color-active);
         line-height: 1.5;
         max-width: 52ch;

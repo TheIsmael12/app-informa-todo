@@ -15,11 +15,12 @@ Aplicación CRUD de tareas construida con **Next.js 16 App Router**, **TypeScrip
 7. [Validación](#validación)
 8. [Internacionalización](#internacionalización)
 9. [Accesibilidad](#accesibilidad)
-10. [Lighthouse](#lighthouse)
-11. [Tests unitarios](#tests-unitarios)
-12. [Documentación Swagger](#documentación-swagger)
-13. [Logging](#logging)
-14. [Decisiones técnicas y herramientas utilizadas](#decisiones-técnicas-y-herramientas-utilizadas)
+10. [Diseño Responsive](#diseño-responsive)
+11. [Lighthouse](#lighthouse)
+12. [Tests unitarios](#tests-unitarios)
+13. [Documentación Swagger](#documentación-swagger)
+14. [Logging](#logging)
+15. [Decisiones técnicas y herramientas utilizadas](#decisiones-técnicas-y-herramientas-utilizadas)
 
 ---
 
@@ -235,6 +236,19 @@ La aplicación cumple al **100% con los requisitos de accesibilidad WCAG 2.1 niv
 - Imágenes decorativas marcadas con `aria-hidden="true"`.
 - Feedback de operaciones anunciado con regiones `aria-live`.
 - Etiquetas `<label>` asociadas a todos los campos de formulario.
+
+---
+
+## Diseño Responsive
+
+La aplicación está desarrollada **100% responsive**, adaptándose correctamente a cualquier tamaño de pantalla: móvil, tablet y escritorio.
+
+- Diseño mobile-first: los estilos base apuntan a pantallas pequeñas y se amplían mediante media queries (`@mixin respond-to`).
+- La tabla de tareas se transforma en tarjetas apiladas en pantallas pequeñas para garantizar la legibilidad sin scroll horizontal.
+- La barra de navegación, el selector de idioma, el selector de tema y los controles de filtrado y paginación se reorganizan fluidamente en cada breakpoint.
+- Los modales ocupan toda la pantalla en móvil y se centran como diálogo flotante en escritorio.
+- Tipografía y espaciados definidos con variables SCSS escalables (`_variables.scss`).
+- Breakpoints definidos en `src/styles/01-tools/_query.scss`.
 
 ---
 

@@ -1,4 +1,4 @@
-@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/00-settings/variables" as var;
 @use "@/styles/01-tools/mixins" as mx;
 
 .modal {
@@ -36,8 +36,8 @@
     @include mx.flex(row, space-between, center);
 
     &__title {
-      font-size: variables.$text-2xl;
-      font-weight: variables.$font-bold;
+      font-size: var.$text-2xl;
+      font-weight: var.$font-bold;
       max-width: 80%;
     }
 
@@ -95,8 +95,8 @@
 
     &__title {
       text-align: center;
-      font-size: variables.$text-xl;
-      font-weight: variables.$font-semibold;
+      font-size: var.$text-xl;
+      font-weight: var.$font-semibold;
       @include mx.my(2rem);
       @include mx.px(1.5rem);
     }

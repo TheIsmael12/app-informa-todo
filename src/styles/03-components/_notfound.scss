@@ -1,34 +1,33 @@
-@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/00-settings/variables" as var;
 @use "@/styles/01-tools/mixins" as mx;
 
 .notfound {
   width: 100%;
-  min-height: calc(100dvh - 4rem);
-  @include mx.flex(column, center, center, 1.5rem);
-  @include mx.px(1.5rem);
-  @include mx.py(3rem);
   text-align: center;
+  min-height: calc(100dvh - 6rem);
+  @include mx.px(1.5rem);
+  @include mx.flex(column, center, center, 1.5rem);
 
   img {
-    width: clamp(180px, 40vw, 350px);
     height: auto;
+    width: clamp(180px, 40vw, 350px);
   }
 
   h1 {
-    font-family: variables.$font-title;
-    font-size: variables.$text-3xl;
-    font-weight: variables.$font-bold;
+    font-family: var.$font-title;
+    font-size: var.$text-3xl;
+    font-weight: var.$font-bold;
     color: var(--color);
     line-height: 1.15;
     letter-spacing: -0.02em;
 
     @include mx.screen(md) {
-      font-size: variables.$text-4xl;
+      font-size: var.$text-4xl;
     }
   }
 
   p {
-    font-size: variables.$text-base;
+    font-size: var.$text-base;
     color: var(--border-color-active);
     line-height: 1.6;
     max-width: 44ch;
@@ -42,8 +41,8 @@
     height: 2.75rem;
     @include mx.px(1.5rem);
     @include mx.rounded();
-    font-size: variables.$text-base;
-    font-weight: variables.$font-medium;
+    font-size: var.$text-base;
+    font-weight: var.$font-medium;
     color: var(--light-color);
     background-color: var(--primary-color);
     text-decoration: none;

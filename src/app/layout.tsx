@@ -1,4 +1,5 @@
 import '@/styles/globals.scss'
+
 import { PropsWithChildren } from 'react';
 
 export default function RootLayout({

@@ -1,4 +1,4 @@
-@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/00-settings/variables" as var;
 @use "@/styles/01-tools/mixins" as mx;
 
 .theme {
@@ -15,10 +15,10 @@
     width: 1.75rem;
     height: 1.75rem;
     cursor: pointer;
-    border-radius: 50%;
     transition:
       background-color 0.3s,
       color 0.3s;
+    @include mx.rounded(50%);
     @include mx.flex(row, center, center);
 
     &--active {

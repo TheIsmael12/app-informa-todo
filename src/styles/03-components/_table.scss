@@ -1,4 +1,4 @@
-@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/00-settings/variables" as var;
 @use "@/styles/01-tools/mixins" as mx;
 
 .list {
@@ -14,7 +14,7 @@
 
 .table__info {
   width: auto;
-  font-size: variables.$text-sm;
+  font-size: var.$text-sm;
   @include mx.screen(lg) {
     width: 20%;
   }
@@ -22,7 +22,7 @@
 
 .table__rows-per-page {
   width: auto;
-  font-size: variables.$text-sm;
+  font-size: var.$text-sm;
   @include mx.screen(lg) {
     width: 20%;
   }

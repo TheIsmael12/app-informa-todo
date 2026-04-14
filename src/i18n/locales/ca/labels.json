@@ -5,7 +5,8 @@
     "status": "Estat",
     "search": "Cercar tasques",
     "rowsPerPage": "Files per pàgina",
-    "deleteTodoConfirmation": "Esteu segur que voleu eliminar aquesta tasca?"
+    "deleteTodoConfirmation": "Esteu segur que voleu eliminar aquesta tasca?",
+    "loading": "Carregant"
   },
   "Options": {
     "all": "Tots",

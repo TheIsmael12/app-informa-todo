@@ -5,7 +5,8 @@
     "status": "Status",
     "search": "Search tasks",
     "rowsPerPage": "Rows per page",
-    "deleteTodoConfirmation": "Are you sure you want to delete this task?"
+    "deleteTodoConfirmation": "Are you sure you want to delete this task?",
+    "loading": "Loading"
   },
   "Options": {
     "all": "All",

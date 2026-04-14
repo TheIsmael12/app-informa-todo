@@ -5,7 +5,8 @@
     "status": "État",
     "search": "Rechercher des tâches",
     "rowsPerPage": "Lignes par page",
-    "deleteTodoConfirmation": "Êtes-vous sûr de vouloir supprimer cette tâche ?"
+    "deleteTodoConfirmation": "Êtes-vous sûr de vouloir supprimer cette tâche ?",
+    "loading": "Chargement"
   },
   "Options": {
     "all": "Tous",

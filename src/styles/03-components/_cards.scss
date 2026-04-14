@@ -1,4 +1,4 @@
-@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/00-settings/variables" as var;
 @use "@/styles/01-tools/mixins" as mx;
 
 .todo__card {
@@ -42,12 +42,12 @@
   }
 
   &__title {
-    font-size: variables.$text-xl;
-    font-weight: variables.$font-bold;
+    font-size: var.$text-xl;
+    font-weight: var.$font-bold;
   }
 
   &__description {
-    font-size: variables.$text-sm;
+    font-size: var.$text-sm;
     line-height: 1.5;
     display: -webkit-box;
     line-clamp: 2;
@@ -71,8 +71,8 @@
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    font-size: variables.$text-xs;
-    font-weight: variables.$font-semibold;
+    font-size: var.$text-xs;
+    font-weight: var.$font-semibold;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     @include mx.px(0.5rem);

@@ -1,11 +1,11 @@
-@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/00-settings/variables" as var;
 @use "@/styles/01-tools/mixins" as mx;
 
 .select {
   width: 100%;
   position: relative;
   border: 1.5px solid var(--border-color);
-  font-size: variables.$text-sm;
+  font-size: var.$text-sm;
   background-color: var(--background-color);
   @include mx.px(0.5rem);
   @include mx.py(0.75rem);
@@ -34,7 +34,7 @@
     overflow-y: auto;
     border: 1px solid var(--border-color);
     background-color: var(--background-color);
-    font-size: variables.$text-sm;
+    font-size: var.$text-sm;
     scrollbar-width: thin;
     scrollbar-color: var(--primary-color) var(--background-color);
     @include mx.rounded();

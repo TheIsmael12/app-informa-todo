@@ -2,9 +2,7 @@ import { Todo } from "@/types/todo";
 import { Status } from "@/enums/status";
 
 declare global {
-  // eslint-disable-next-line no-var
   var __todos: Todo[] | undefined;
-  // eslint-disable-next-line no-var
   var __nextTodoId: number | undefined;
 }
 
