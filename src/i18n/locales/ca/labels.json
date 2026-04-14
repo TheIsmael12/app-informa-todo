@@ -3,7 +3,7 @@
     "title": "Títol",
     "description": "Descripció",
     "status": "Estat",
-    "search": "Cercar",
+    "search": "Cercar tasques",
     "rowsPerPage": "Files per pàgina",
     "deleteTodoConfirmation": "Esteu segur que voleu eliminar aquesta tasca?"
   },

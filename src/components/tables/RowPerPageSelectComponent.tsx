@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import SelectComponent from '../ui/inputs/SelectComponent';
+import SelectComponent from '@/components/ui/inputs/SelectComponent';
 
 import { SelectRowsProps } from '@/types/tables';
 import { DEFAULT_SIZE } from '@/constants/filters';

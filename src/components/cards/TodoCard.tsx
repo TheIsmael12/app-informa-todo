@@ -1,7 +1,9 @@
 import UpsertTodo from "@/views/components/UpsertTodo";
-import { Todo } from "@/types/todo";
-import { Status } from "@/enums/status";
 import DeleteTodo from "@/views/components/DeleteTodo";
+
+import { useTranslations } from "next-intl";
+
+import { Todo } from "@/types/todo";
 
 interface TodoCardProps {
     data: Todo;
@@ -11,7 +13,10 @@ export default function TodoCard({
     data
 }: TodoCardProps) {
 
+    const options = useTranslations("Options");
+
     return (
+
         <article className={`todo__card ${data.status}`}>
 
             <div className="todo__card__body">
@@ -25,7 +30,7 @@ export default function TodoCard({
 
             <div className="todo__card__footer">
                 <span className={`todo__card__status ${data.status}`}>
-                    {data.status === Status.COMPLETED ? 'Completado' : 'Pendiente'}
+                    {options(data.status)}
                 </span>
                 <div className="todo__card__footer__actions">
                     <UpsertTodo data={data} />
@@ -34,5 +39,7 @@ export default function TodoCard({
             </div>
 
         </article>
-    );
+
+    )
+
 }

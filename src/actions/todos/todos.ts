@@ -1,20 +1,10 @@
 import { fetchData } from "@/actions/fetch";
-import { FetchResponse } from "@/types/fetchResponse";
 
+import { processSearchParams } from "@/lib/processSerchParams";
+
+import { FetchResponse } from "@/types/fetchResponse";
 import { AddTodo, EditTodo, Todo } from "@/types/todo";
 import { PaginatedDataResponse } from "@/types/fetchResponse";
-
-const processSearchParams = (params: SearchParams): string => {
-  const q = new URLSearchParams();
-  if (params.page !== undefined) q.set("page", String(params.page));
-  if (params.limit !== undefined) q.set("limit", String(params.limit));
-  if (params.search !== undefined && params.search !== null) {
-    const search = Array.isArray(params.search) ? params.search[0] : String(params.search);
-    if (search) q.set("search", search);
-  }
-  return q.toString();
-};
-
 
 /**
  * Listado de todos los todos

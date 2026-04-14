@@ -1,5 +1,6 @@
-import { Status } from "@/enums/status";
 import * as Yup from "yup";
+
+import { Status } from "@/enums/status";
 
 /**
  * Schema de validación para tareas (todos).

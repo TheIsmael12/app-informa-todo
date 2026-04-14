@@ -8,17 +8,17 @@ import { toast } from "sonner";
 import ModalComponent from "@/components/modals/ModalComponent";
 import InputComponent from "@/components/ui/inputs/InputComponent";
 import SelectComponent from "@/components/ui/inputs/SelectComponent";
-
-import { HTTPStatus } from "@/constants/httpStatus";
-
-import { Edit2Icon, UserPlus2Icon } from "lucide-react";
+import TextAreaComponent from "@/components/ui/inputs/TextAreaComponent";
 
 import { addTodo, editTodo } from "@/actions/todos/todos-actions";
 
 import { Status } from "@/enums/status";
+import { HTTPStatus } from "@/constants/httpStatus";
 import { AddTodo, EditTodo, Todo } from "@/types/todo";
 
 import { todoSchema } from "@/schemas/todo.schema";
+
+import { Edit2Icon, UserPlus2Icon } from "lucide-react";
 
 interface UpsertTodoProps {
     data?: Todo;
@@ -96,10 +96,9 @@ export default function UpsertTodo({
                                 required
                             />
 
-                            <InputComponent
+                            <TextAreaComponent
                                 id="description"
                                 name="description"
-                                type="text"
                                 label='description'
                                 placeholder='description'
                                 value={values.description || ''}

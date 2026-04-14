@@ -1,8 +1,8 @@
 'use client'
 
-import PageInfoComponent from './PageInfoComponent'
-import PaginationComponent from './PaginationComponent'
-import RowsPerPageSelectComponent from './RowPerPageSelectComponent'
+import PageInfoComponent from '@/components/tables/PageInfoComponent'
+import PaginationComponent from '@/components/tables/PaginationComponent'
+import RowsPerPageSelectComponent from '@/components/tables/RowPerPageSelectComponent'
 
 import { DEFAULT_PAGE, DEFAULT_SIZE } from '@/constants/filters'
 

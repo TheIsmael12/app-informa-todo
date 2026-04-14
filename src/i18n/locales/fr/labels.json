@@ -3,7 +3,7 @@
     "title": "Titre",
     "description": "Description",
     "status": "État",
-    "search": "Rechercher",
+    "search": "Rechercher des tâches",
     "rowsPerPage": "Lignes par page",
     "deleteTodoConfirmation": "Êtes-vous sûr de vouloir supprimer cette tâche ?"
   },

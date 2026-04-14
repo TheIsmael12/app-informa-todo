@@ -4,13 +4,15 @@ import { useRef } from "react";
 import { createPortal } from "react-dom";
 
 import { useTranslations } from "next-intl";
-import { useOutsideClick } from "@/hooks/useOutsideClick";
+
 import { useFocusTrap } from "@/hooks/useFocusTrap";
+import { useOutsideClick } from "@/hooks/useOutsideClick";
 
 import { Formik, Form, FormikValues,  } from "formik";
 
-import { PlusIcon, XIcon } from "lucide-react";
 import { ModalProps } from "@/types/modal";
+
+import { PlusIcon, XIcon } from "lucide-react";
 
 export default function ModalComponent<T extends FormikValues = FormikValues>({
     title,

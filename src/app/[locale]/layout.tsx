@@ -1,17 +1,16 @@
 import { headers } from 'next/headers'
 import { notFound } from 'next/navigation'
 
+import { Toaster } from 'sonner'
 import { ThemeProvider } from 'next-themes'
 
-import { setRequestLocale, getTranslations } from 'next-intl/server'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
+import { setRequestLocale, getTranslations } from 'next-intl/server'
 
 import Navbar from '@/components/navigations/Navbar'
 
 import { routing } from '@/i18n/routing'
 import { generateTranslatedMetadata } from '@/lib/generateMetadata'
-
-import { Toaster } from 'sonner'
 
 import { Fira_Sans, Inter } from 'next/font/google'
 

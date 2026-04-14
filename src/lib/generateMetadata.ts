@@ -38,9 +38,9 @@ export async function generateTranslatedMetadata({
   const t = await getTranslations({ locale, namespace });
 
   const baseUrl = (
-    ENV.NEXTAUTH_URL?.startsWith("http")
-      ? ENV.NEXTAUTH_URL
-      : `https://${ENV.NEXTAUTH_URL}`
+    ENV.NEXT_PUBLIC_API_BASE_URL?.startsWith("http")
+      ? ENV.NEXT_PUBLIC_API_BASE_URL
+      : `https://${ENV.NEXT_PUBLIC_API_BASE_URL}`
   )?.replace(/\/$/, "");
 
   const normalizedPathname = pathname as keyof Pathnames;

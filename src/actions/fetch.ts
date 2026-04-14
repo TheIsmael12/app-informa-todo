@@ -1,6 +1,8 @@
-import { HTTPStatus } from "@/constants/httpStatus";
-import { FetchResponse } from "@/types/fetchResponse";
 import { cookies } from "next/headers";
+
+import { HTTPStatus } from "@/constants/httpStatus";
+
+import { FetchResponse } from "@/types/fetchResponse";
 
 const baseURL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000/api";
 

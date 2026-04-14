@@ -3,7 +3,7 @@
     "title": "Titulo",
     "description": "Descripción",
     "status": "Estado",
-    "search": "Buscar",
+    "search": "Buscar tareas",
     "rowsPerPage": "Filas por página",
     "deleteTodoConfirmation": "¿Estás seguro de que quieres eliminar esta tarea?"
   },

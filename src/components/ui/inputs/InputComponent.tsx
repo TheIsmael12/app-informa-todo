@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl";
 
-import { XIcon } from "lucide-react";
 import { InputComponentProps } from "@/types/ui";
+
+import { XIcon } from "lucide-react";
 
 export default function InputComponent({
     id,

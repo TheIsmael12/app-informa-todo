@@ -1,7 +1,7 @@
 @use "@/styles/00-settings/variables" as variables;
 @use "@/styles/01-tools/mixins" as mx;
 
-.page-title {
+.title {
     padding-bottom: 1.75rem;
     border-bottom: 2px solid var(--border-color);
     position: relative;
