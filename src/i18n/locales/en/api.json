@@ -1,0 +1,13 @@
+{
+    "Api": {
+        "Todos": {
+            "fetchOk": "OK",
+            "missingFields": "Missing required fields: title, status",
+            "todoCreated": "Todo created successfully",
+            "todoUpdated": "Todo updated successfully",
+            "todoDeleted": "Todo deleted successfully",
+            "todoNotFound": "Todo with id {id} not found",
+            "duplicateTitle": "A todo with the title '{title}' already exists"
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/01-tools/mixins" as mx;
+
+.select {
+  width: 100%;
+  position: relative;
+  border: 1.5px solid var(--border-color);
+  font-size: variables.$text-sm;
+  background-color: var(--background-color);
+  @include mx.px(0.5rem);
+  @include mx.py(0.75rem);
+  @include mx.rounded();
+  @include mx.flex(row, space-between, center, 0);
+
+  &__group {
+    position: relative;
+    min-width: 100%;
+    @include mx.screen(lg) {
+      min-width: 25rem;
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+  }
+
+  &__dropdown {
+    z-index: 100;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    width: 100%;
+    max-height: 10rem;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+    font-size: variables.$text-sm;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--background-color);
+    @include mx.rounded();
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      &--item {
+        cursor: pointer;
+        @include mx.px(0.5rem);
+        @include mx.py(0.75rem);
+        @include mx.flex(row, flex-start, center, 1rem);
+        &:hover {
+          background-color: rgba(var(--primary-color-rgb), 0.1);
+        }
+      }
+    }
+    &--open {
+      display: block;
+      z-index: 100;
+    }
+    &--close {
+      display: none;
+    }
+  }
+
+  &__error {
+    color: var(--error-color);
+    border: 1.5px solid var(--error-color);
+  }
+
+  &__chevron {
+    transition: transform 0.3s ease;
+    &--open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__selected {
+    margin-top: 1rem;
+    @include mx.flex(row, flex-start, center, 0.5rem);
+
+    &--item {
+      @include mx.px(0.5rem);
+      @include mx.py(0.75rem);
+      @include mx.rounded();
+      @include mx.flex(row, center, center, 0.25rem);
+
+      & svg {
+        cursor: pointer;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+

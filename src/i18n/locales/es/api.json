@@ -1,0 +1,13 @@
+{
+    "Api": {
+        "Todos": {
+            "fetchOk": "OK",
+            "missingFields": "Faltan campos obligatorios: title, status",
+            "todoCreated": "Todo creado correctamente",
+            "todoUpdated": "Todo actualizado correctamente",
+            "todoDeleted": "Todo eliminado correctamente",
+            "todoNotFound": "Todo con id {id} no encontrado",
+            "duplicateTitle": "Ya existe un todo con el título '{title}'"
+        }
+    }
+}

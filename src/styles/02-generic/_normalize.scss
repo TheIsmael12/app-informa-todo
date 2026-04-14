@@ -1,0 +1,70 @@
+@use "@/styles/00-settings/variables" as var;
+@use "@/styles/01-tools/mixins" as mx;
+
+* {
+  box-sizing: border-box;
+  position: relative;
+  min-width: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: pretty;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+span {
+  color: var(--primary-color-active);
+  font-weight: var.$font-medium;
+}
+
+strong {
+  font-weight: var.$font-semibold;
+}
+
+.main {
+  min-height: 90vh;
+  transition: padding-top 0.3s ease;
+  max-width: 85rem;
+  margin: 0 auto;
+  @include mx.mt(6rem);
+  @include mx.py(2rem);
+  @include mx.px(1rem);
+  @include mx.space-y(1.5rem);
+  @include mx.screen(lg) {
+    @include mx.py(4rem);
+    @include mx.px(1.5rem);
+  }
+
+  &__filters {
+    @include mx.flex(row, space-between, flex-end, 1rem);
+  }
+}
+
+::selection {
+  color: var(--light-color);
+  background-color: var(--primary-color);
+}
+
+:focus-visible {
+  outline-offset: 3px;
+  outline: 2px solid var(--primary-color);
+  @include mx.rounded();
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color-active) var(--background-color);
+}

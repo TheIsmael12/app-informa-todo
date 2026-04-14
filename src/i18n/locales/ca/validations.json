@@ -1,0 +1,9 @@
+{
+  "Validations": {
+    "required": "Aquest camp és obligatori",
+    "titleRequired": "El títol és obligatori",
+    "descriptionRequired": "La descripció és obligatòria",
+    "statusRequired": "L'estat és obligatori",
+    "invalidStatus": "L'estat seleccionat no és vàlid"
+  }
+}

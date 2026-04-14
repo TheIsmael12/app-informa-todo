@@ -1,0 +1,142 @@
+@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/01-tools/mixins" as mx;
+
+.modal {
+  z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 90%;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  padding: 0;
+  @include mx.rounded();
+  @include mx.screen(sm) {
+    min-width: 32rem;
+    max-width: 40rem;
+  }
+
+  &__overlay {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__header {
+    position: relative;
+    overflow: hidden;
+    @include mx.px(1.5rem);
+    @include mx.py(1.5rem);
+    @include mx.flex(row, space-between, center);
+
+    &__title {
+      font-size: variables.$text-2xl;
+      font-weight: variables.$font-bold;
+      max-width: 80%;
+    }
+
+    &__close {
+      top: 1rem;
+      right: 1rem;
+      position: absolute;
+      cursor: pointer;
+      background-color: rgba(var(--primary-color-rgb), 0.1);
+      width: 2rem;
+      height: 2rem;
+      @include mx.rounded(50%);
+      @include mx.flex(row, center, center);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  &__form {
+    width: 100%;
+
+    &__content {
+      max-height: 30rem;
+      overflow-y: auto;
+      @include mx.px(1.5rem);
+      @include mx.py(0.25rem);
+      @include mx.space-y(1rem);
+
+      & .input__group,
+      & .select__group {
+        min-width: 100%;
+      }
+    }
+
+    &__footer {
+      @include mx.px(1.5rem);
+      @include mx.py(1.5rem);
+      @include mx.flex(column, center, center);
+      & svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  &__content {
+    max-height: 60dvh;
+    overflow-y: auto;
+    @include mx.px(1.5rem);
+    @include mx.py(0.25rem);
+    @include mx.space-y(1rem);
+
+    &__title {
+      text-align: center;
+      font-size: variables.$text-xl;
+      font-weight: variables.$font-semibold;
+      @include mx.my(2rem);
+      @include mx.px(1.5rem);
+    }
+    &__inline {
+      @include mx.flex(column, center, center);
+      @include mx.screen(md) {
+        gap: 1rem;
+        @include mx.grid(3, 1fr);
+      }
+    }
+  }
+
+  &__footer {
+    @include mx.px(1.5rem);
+    @include mx.py(1.5rem);
+    @include mx.flex(row, center, center, 0.5rem);
+
+    &__button {
+      cursor: pointer;
+      min-width: 10rem;
+      height: 2.5rem;
+      @include mx.rounded();
+    }
+
+    &__confirm {
+      color: var(--light-color);
+      background-color: var(--error-color);
+
+      &:hover {
+        background-color: var(--error-color-hover);
+      }
+    }
+
+    &__cancel {
+      color: var(--light-color);
+      background-color: var(--success-color);
+
+      &:hover {
+        background-color: var(--success-color-hover);
+      }
+    }
+  }
+}

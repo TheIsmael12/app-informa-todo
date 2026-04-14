@@ -1,0 +1,15 @@
+{
+  "Labels": {
+    "title": "Títol",
+    "description": "Descripció",
+    "status": "Estat",
+    "search": "Cercar",
+    "rowsPerPage": "Files per pàgina",
+    "deleteTodoConfirmation": "Esteu segur que voleu eliminar aquesta tasca?"
+  },
+  "Options": {
+    "all": "Tots",
+    "completed": "Completat",
+    "pending": "Pendent"
+  }
+}

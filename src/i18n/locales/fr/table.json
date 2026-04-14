@@ -1,0 +1,12 @@
+{
+  "Tables": {
+    "page": "Page",
+    "of": "sur",
+    "records": "enregistrements",
+    "firstPage": "Première page",
+    "lastPage": "Dernière page",
+    "nextPage": "Page suivante",
+    "previousPage": "Page précédente",
+    "goToPage": "Aller à la page {pageNumber}"
+  }
+}

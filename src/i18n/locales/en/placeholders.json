@@ -1,0 +1,9 @@
+{
+  "Placeholders": {
+    "search": "Search...",
+    "title": "Enter the task title",
+    "description": "Enter the task description",
+    "status": "Select status",
+    "selectStatus": "Select the task status"
+  }
+}

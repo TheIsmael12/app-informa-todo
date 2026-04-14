@@ -1,0 +1,55 @@
+@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/01-tools/mixins" as mx;
+
+.btn {
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  border: 1px solid transparent;
+  height: 2.75rem;
+  min-width: 2.75rem;
+  @include mx.px(1rem);
+  @include mx.rounded();
+  @include mx.flex(row, center, center, 0.5rem);
+
+  & svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  &__small {
+    height: 2.5rem;
+    width: 2.5rem;
+    @include mx.flex(row, center, center);
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+  }
+
+  &--primary {
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    &:hover {
+      color: var(--light-color);
+      background-color: var(--primary-color-hover);
+    }
+  }
+
+  &--secondary {
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+    &:hover {
+      background-color: var(--secondary-color-hover);
+    }
+  }
+
+  &--error {
+    color: var(--light-color);
+    background-color: var(--error-color);
+    &:hover {
+      background-color: var(--error-color-hover);
+    }
+  }
+}

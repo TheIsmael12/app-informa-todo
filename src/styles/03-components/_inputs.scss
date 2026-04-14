@@ -1,0 +1,139 @@
+@use "@/styles/00-settings/variables" as var;
+@use "@/styles/01-tools/mixins" as mx;
+
+.input {
+  width: 100%;
+  position: relative;
+  outline: none;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1.5px solid var(--border-color);
+  background-color: var(--neutral-color-light);
+  height: 2.75rem;
+  @include mx.px(0.75rem);
+  @include mx.rounded();
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: var(--neutral-color);
+  }
+
+  &__error {
+    color: var(--error-color);
+    border: 1.5px solid var(--error-color);
+  }
+
+  &__full {
+    width: 100%;
+  }
+
+  &__textarea {
+    min-height: 4.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    resize: vertical;
+  }
+
+  &:focus {
+    border: 1.5px solid var(--primary-color);
+  }
+
+  &::placeholder {
+    opacity: 1; // Override iOS default
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--background-color) inset !important;
+    -webkit-text-fill-color: inherit !important;
+  }
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+  }
+
+  &__border {
+    border-bottom: 1px solid var(--border-color);
+    @include mx.my(0.5rem);
+  }
+
+  &__search {
+    width: 100%;
+    @include mx.screen(md) {
+      min-width: 20rem;
+    }
+
+    &__clear {
+      cursor: pointer;
+      position: absolute;
+      top: 25%;
+      right: 0.5rem;
+      color: var(--primary-color);
+      @include mx.flex(row, center, center, 0.25rem);
+
+      & svg {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+
+  &__group {
+    @include mx.flex(column, flex-start, flex-start, 0.75rem);
+    @include mx.screen(lg) {
+      width: auto;
+    }
+  }
+
+}
+
+.label {
+  &__title {
+    font-size: var.$text-sm;
+    @include mx.flex(row, flex-start, center, 0.5rem);
+  }
+
+  &__toggle {
+    font-size: var.$text-sm;
+    cursor: pointer;
+    user-select: none;
+    @include mx.flex(row, flex-start, center, 0.75rem);
+
+    &__text {
+      @include mx.flex(row, flex-start, center, 0.25rem);
+    }
+
+    &__required {
+      color: var(--error-color);
+    }
+  }
+
+  &__error {
+    color: var(--error-color) !important;
+  }
+
+}

@@ -1,0 +1,13 @@
+{
+    "Api": {
+        "Todos": {
+            "fetchOk": "OK",
+            "missingFields": "Champs obligatoires manquants : title, status",
+            "todoCreated": "Tâche créée avec succès",
+            "todoUpdated": "Tâche mise à jour avec succès",
+            "todoDeleted": "Tâche supprimée avec succès",
+            "todoNotFound": "Tâche avec l'id {id} introuvable",
+            "duplicateTitle": "Une tâche avec le titre '{title}' existe déjà"
+        }
+    }
+}

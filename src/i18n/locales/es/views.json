@@ -1,0 +1,13 @@
+{
+  "Views": {
+    "Error404": {
+      "title": "Página no encontrada",
+      "description": "Lo sentimos, la página que buscas no existe.",
+      "backToHome": "Volver a la página principal"
+    },
+    "Todos": {
+      "title": "Mis tareas hecho por Ismael Benabdellah El Ouahabi",
+      "description": "Gestiona y organiza todas tus tareas pendientes y completadas."
+    }
+  }
+}

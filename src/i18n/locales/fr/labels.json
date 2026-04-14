@@ -1,0 +1,15 @@
+{
+  "Labels": {
+    "title": "Titre",
+    "description": "Description",
+    "status": "État",
+    "search": "Rechercher",
+    "rowsPerPage": "Lignes par page",
+    "deleteTodoConfirmation": "Êtes-vous sûr de vouloir supprimer cette tâche ?"
+  },
+  "Options": {
+    "all": "Tous",
+    "completed": "Terminée",
+    "pending": "En attente"
+  }
+}

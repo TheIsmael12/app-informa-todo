@@ -1,0 +1,9 @@
+{
+  "Placeholders": {
+    "search": "Rechercher...",
+    "title": "Saisissez le titre de la tâche",
+    "description": "Saisissez la description de la tâche",
+    "status": "Sélectionner l'état",
+    "selectStatus": "Sélectionner l'état de la tâche"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "Buttons": {
+    "addTodo": "Ajouter une tâche",
+    "addingTodo": "Ajout en cours...",
+    "updateTodo": "Mettre à jour la tâche",
+    "updatingTodo": "Mise à jour en cours...",
+    "deleteTodo": "Supprimer la tâche",
+    "deletingTodo": "Suppression en cours...",
+    "cancel": "Annuler"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "Views": {
+    "Error404": {
+      "title": "Pàgina no trobada",
+      "description": "Ho sentim, la pàgina que busqueu no existeix.",
+      "backToHome": "Tornar a la pàgina principal"
+    },
+    "Todos": {
+      "title": "Les meves tasques fet per Ismael Benabdellah El Ouahabi",
+      "description": "Gestiona i organitza totes les teves tasques pendents i completades."
+    }
+  }
+}

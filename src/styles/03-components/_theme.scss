@@ -1,0 +1,38 @@
+@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/01-tools/mixins" as mx;
+
+.theme {
+  width: max-content;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  width: 8.5rem;
+  height: 2.25rem;
+  @include mx.px(0.5rem);
+  @include mx.rounded();
+  @include mx.flex(row, space-between, center, 0rem);
+
+  &__item {
+    width: 1.75rem;
+    height: 1.75rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+    @include mx.flex(row, center, center);
+
+    &--active {
+      background-color: var(--primary-color);
+      svg {
+        color: var(--light-color) !important;
+      }
+    }
+
+    &:hover {
+      background-color: var(--primary-color);
+      svg {
+        color: var(--light-color) !important;
+      }
+    }
+  }
+}

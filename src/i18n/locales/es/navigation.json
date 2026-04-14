@@ -1,0 +1,15 @@
+{
+  "Navigation": {
+    "skipToContent": "Ir al contenido principal",
+    "Locale": {
+      "changeLanguageTo": "Cambiar idioma a {language}",
+      "changeLanguage": "Cambiar idioma"
+    },
+    "ThemeToggle": {
+      "toggleTheme": "Cambiar tema a {theme}",
+      "lightMode": "Modo claro",
+      "systemMode": "Modo sistema",
+      "darkMode": "Modo oscuro"
+    }
+  }
+}

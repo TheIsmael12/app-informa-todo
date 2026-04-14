@@ -1,0 +1,26 @@
+$font-title: var(--font-fira);
+$font-body: var(--font-inter);
+
+$text-xxs: 0.625rem; // 0.625rem (10px)
+$text-xs: 0.75rem; // 0.75rem (12px)
+$text-sm: 0.875rem; // 0.875rem (14px)
+$text-base: 1rem; // 1rem (16px)
+$text-lg: 1.125rem; // 1.125rem (18px)
+$text-xl: 1.25rem; // 1.25rem (20px)
+$text-2xl: 1.5rem; // 1.5rem (24px)
+$text-3xl: 1.875rem; // 1.875rem (30px)
+$text-4xl: 2.25rem; // 2.25rem (36px)
+$text-5xl: 3rem; // 3rem (48px)
+$text-6xl: 3.75rem; // 3.75rem (60px)
+$text-7xl: 4.5rem; // 4.5rem (72px)
+$text-8xl: 6rem; // 6rem (96px)
+$text-9xl: 8rem; // 8rem (128px)
+
+$font-bold: 700;
+$font-semibold: 600;
+$font-medium: 500;
+$font-normal: 400;
+
+* {
+  font-family: $font-body;
+}

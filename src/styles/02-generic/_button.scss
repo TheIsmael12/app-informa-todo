@@ -1,0 +1,12 @@
+@use "@/styles/00-settings/variables" as var;
+
+button {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  font-size: var.$text-base;
+}

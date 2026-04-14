@@ -1,0 +1,61 @@
+@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/01-tools/mixins" as mx;
+
+.notfound {
+  width: 100%;
+  min-height: calc(100dvh - 4rem);
+  @include mx.flex(column, center, center, 1.5rem);
+  @include mx.px(1.5rem);
+  @include mx.py(3rem);
+  text-align: center;
+
+  img {
+    width: clamp(180px, 40vw, 350px);
+    height: auto;
+  }
+
+  h1 {
+    font-family: variables.$font-title;
+    font-size: variables.$text-3xl;
+    font-weight: variables.$font-bold;
+    color: var(--color);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+
+    @include mx.screen(md) {
+      font-size: variables.$text-4xl;
+    }
+  }
+
+  p {
+    font-size: variables.$text-base;
+    color: var(--border-color-active);
+    line-height: 1.6;
+    max-width: 44ch;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 2.75rem;
+    @include mx.px(1.5rem);
+    @include mx.rounded();
+    font-size: variables.$text-base;
+    font-weight: variables.$font-medium;
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: var(--primary-color-hover);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 3px;
+    }
+  }
+}

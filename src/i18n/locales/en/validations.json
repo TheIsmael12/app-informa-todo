@@ -1,0 +1,9 @@
+{
+  "Validations": {
+    "required": "This field is required",
+    "titleRequired": "Title is required",
+    "descriptionRequired": "Description is required",
+    "statusRequired": "Status is required",
+    "invalidStatus": "The selected status is not valid"
+  }
+}

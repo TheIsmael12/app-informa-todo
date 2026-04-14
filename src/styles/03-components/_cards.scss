@@ -1,0 +1,101 @@
+@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/01-tools/mixins" as mx;
+
+.todo__card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  @include mx.rounded();
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--border-color);
+    transition: background-color 0.2s ease;
+  }
+
+  &.pending::before {
+    background-color: var(--warning-color);
+  }
+
+  &.completed::before {
+    background-color: var(--success-color);
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &__body {
+    flex: 1;
+    @include mx.px(1rem);
+    @include mx.py(1rem);
+    @include mx.flex(column, flex-start, stretch, 0.5rem);
+  }
+
+  &__header {
+    @include mx.flex(row, space-between, flex-start, 0.5rem);
+  }
+
+  &__title {
+    font-size: variables.$text-xl;
+    font-weight: variables.$font-bold;
+  }
+
+  &__description {
+    font-size: variables.$text-sm;
+    line-height: 1.5;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__footer {
+    border-top: 1px solid var(--border-color);
+    @include mx.px(1rem);
+    @include mx.py(0.5rem);
+    @include mx.flex(row, space-between, center, 0.5rem);
+
+    &__actions {
+      @include mx.flex(row, center, center, 0.5rem);
+    }
+  }
+
+  &__status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: variables.$text-xs;
+    font-weight: variables.$font-semibold;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    @include mx.px(0.5rem);
+    @include mx.py(0.25rem);
+    @include mx.rounded(999px);
+
+    &::before {
+      content: "";
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: currentColor;
+    }
+
+    &.pending {
+      color: var(--warning-color);
+      background-color: rgba(var(--warning-color-rgb), 0.1);
+    }
+
+    &.completed {
+      color: var(--success-color);
+      background-color: rgba(var(--success-color-rgb), 0.1);
+    }
+  }
+}

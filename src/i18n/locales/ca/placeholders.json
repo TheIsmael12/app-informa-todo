@@ -1,0 +1,9 @@
+{
+  "Placeholders": {
+    "search": "Cercar...",
+    "title": "Introdueix el títol de la tasca",
+    "description": "Introdueix la descripció de la tasca",
+    "status": "Selecciona l'estat",
+    "selectStatus": "Selecciona l'estat de la tasca"
+  }
+}

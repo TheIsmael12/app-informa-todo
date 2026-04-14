@@ -1,0 +1,9 @@
+{
+  "Placeholders": {
+    "search": "Buscar...",
+    "title": "Introduce el título de la tarea",
+    "description": "Introduce la descripción de la tarea",
+    "status": "Selecciona el estado",
+    "selectStatus": "Selecciona el estado de la tarea"
+  }
+}

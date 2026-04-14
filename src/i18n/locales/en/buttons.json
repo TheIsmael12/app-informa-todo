@@ -1,0 +1,11 @@
+{
+  "Buttons": {
+    "addTodo": "Add task",
+    "addingTodo": "Adding task...",
+    "updateTodo": "Update task",
+    "updatingTodo": "Updating task...",
+    "deleteTodo": "Delete task",
+    "deletingTodo": "Deleting task...",
+    "cancel": "Cancel"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "Buttons": {
+    "addTodo": "Añadir tarea",
+    "addingTodo": "Añadiendo tarea...",
+    "updateTodo": "Actualizar tarea",
+    "updatingTodo": "Actualizando tarea...",
+    "deleteTodo": "Eliminar tarea",
+    "deletingTodo": "Eliminando tarea...",
+    "cancel": "Cancelar"
+  }
+}

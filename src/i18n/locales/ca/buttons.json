@@ -1,0 +1,11 @@
+{
+  "Buttons": {
+    "addTodo": "Afegir tasca",
+    "addingTodo": "Afegint tasca...",
+    "updateTodo": "Actualitzar tasca",
+    "updatingTodo": "Actualitzant tasca...",
+    "deleteTodo": "Eliminar tasca",
+    "deletingTodo": "Eliminant tasca...",
+    "cancel": "Cancel·lar"
+  }
+}

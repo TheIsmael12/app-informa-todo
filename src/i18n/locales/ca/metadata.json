@@ -1,0 +1,9 @@
+{
+  "Metadata": {
+    "Common": {
+      "title": " Llista de tasques | {appName}",
+      "description": "Prova d'una aplicació de gestió de tasques amb Next.js per a {appName}.",
+      "keywords": "Informa DB, tasques, gestió de tasques, Next.js, prova tècnica, {appName}"
+    }
+  }
+}

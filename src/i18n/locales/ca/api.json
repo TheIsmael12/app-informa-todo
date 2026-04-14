@@ -1,0 +1,13 @@
+{
+    "Api": {
+        "Todos": {
+            "fetchOk": "OK",
+            "missingFields": "Falten camps obligatoris: title, status",
+            "todoCreated": "Tasca creada correctament",
+            "todoUpdated": "Tasca actualitzada correctament",
+            "todoDeleted": "Tasca eliminada correctament",
+            "todoNotFound": "Tasca amb id {id} no trobada",
+            "duplicateTitle": "Ja existeix una tasca amb el títol '{title}'"
+        }
+    }
+}

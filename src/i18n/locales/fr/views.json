@@ -1,0 +1,13 @@
+{
+  "Views": {
+    "Error404": {
+      "title": "Page introuvable",
+      "description": "Désolé, la page que vous cherchez n'existe pas.",
+      "backToHome": "Retour à l'accueil"
+    },
+    "Todos": {
+      "title": "Mes tâches réalisées par Ismael Benabdellah El Ouahabi",
+      "description": "Gérez et organisez toutes vos tâches en attente et terminées."
+    }
+  }
+}

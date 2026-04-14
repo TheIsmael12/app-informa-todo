@@ -1,0 +1,70 @@
+@use "@/styles/00-settings/variables" as variables;
+@use "@/styles/01-tools/mixins" as mx;
+
+.list {
+  @include mx.grid(1fr, 1rem);
+}
+
+.table__footer {
+  @include mx.flex(column, center, center, 1rem);
+  @include mx.screen(lg) {
+    @include mx.flex(row, space-between, center, 1rem);
+  }
+}
+
+.table__info {
+  width: auto;
+  font-size: variables.$text-sm;
+  @include mx.screen(lg) {
+    width: 20%;
+  }
+}
+
+.table__rows-per-page {
+  width: auto;
+  font-size: variables.$text-sm;
+  @include mx.screen(lg) {
+    width: 20%;
+  }
+
+  .input__group {
+    width: auto;
+    @include mx.flex(row, flex-end, center, 0.5rem);
+  }
+
+  .select {
+    width: 5rem;
+  }
+}
+
+.table__pagination {
+  width: auto;
+  @include mx.flex(row, center, center, 0.25rem);
+  @include mx.screen(lg) {
+    width: 40%;
+  }
+
+  &__item {
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: var(--border-color);
+    border: 1px solid var(--border-color);
+    min-width: 2rem;
+    @include mx.rounded();
+    @include mx.flex(row, center, center, 1rem);
+    @media (min-width: 2.5rem) {
+      @include mx.px(0.5rem);
+    }
+
+    &__active {
+      color: var(--light-color);
+      background-color: var(--primary-color);
+    }
+
+    &__disabled {
+      color: var(--color);
+      background-color: var(--border-color-hover);
+      cursor: not-allowed;
+    }
+  }
+}

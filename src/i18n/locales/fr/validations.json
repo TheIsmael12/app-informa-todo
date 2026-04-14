@@ -1,0 +1,9 @@
+{
+  "Validations": {
+    "required": "Ce champ est obligatoire",
+    "titleRequired": "Le titre est obligatoire",
+    "descriptionRequired": "La description est obligatoire",
+    "statusRequired": "L'état est obligatoire",
+    "invalidStatus": "L'état sélectionné n'est pas valide"
+  }
+}
